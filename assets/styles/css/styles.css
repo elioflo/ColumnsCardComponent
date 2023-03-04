@@ -348,6 +348,7 @@ template {
 }
 .card__paragraph {
   line-height: 1.7;
+  color: var(--neutral-transparent-white);
 }
 .card--sedans {
   --bg-color: var(--primary-bright-orange);
@@ -356,15 +357,9 @@ template {
   border-top-left-radius: var(--border-radius);
   margin-top: 5rem;
 }
-.card--sedans .card__btn {
-  color: var(--primary-bright-orange);
-}
 .card--suvs {
   --img: url("../../images/icon-suvs.svg");
   --bg-color: var(--primary-dark-cyan);
-}
-.card--suvs .card__btn {
-  color: var(--primary-dark-cyan);
 }
 .card--luxury {
   --img: url("../../images/icon-luxury.svg");
@@ -373,20 +368,20 @@ template {
   border-bottom-left-radius: var(--border-radius);
   margin-bottom: 5rem;
 }
-.card--luxury .card__btn {
-  color: var(--primary-very-dark-cyan);
-}
 .card__btn {
   display: inline-block;
   background-color: var(--neutral-very-light-gray);
+  border: 0.15rem solid var(--neutral-very-light-gray);
   padding: 0.75rem 2rem;
   border-radius: 2rem;
   margin: 0.5rem 0;
+  color: var(--bg-color);
 }
 @media (min-width: 768px) {
   .card {
     margin: 0;
-    max-width: 200px;
+    max-width: 225px;
+    background-size: 4rem;
   }
   .card--sedans {
     --bg-color: var(--primary-bright-orange);
@@ -406,8 +401,16 @@ template {
     border-bottom-right-radius: var(--border-radius);
     border-bottom-left-radius: 0;
   }
+  .card__title {
+    font-size: 2.5rem;
+  }
   .card__btn {
     margin-top: 3rem;
+  }
+  .card__btn:hover {
+    --border-size: .15rem;
+    color: var(--neutral-very-light-gray);
+    background-color: transparent;
   }
 }
 
