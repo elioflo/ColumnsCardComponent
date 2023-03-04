@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/elioflo/ColumnsCardComponent](https://github.com/elioflo/ColumnsCardComponent)
+- Live Site URL: [https://elioflo.github.io/ColumnsCardComponent/](https://elioflo.github.io/ColumnsCardComponent/)
 
 ## My process
 
