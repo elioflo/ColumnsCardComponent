@@ -1,7 +1,8 @@
 @import '../abstract/media-queries';
 
 .container {
-  min-height: 100vh;  
+  min-height: 100vh; 
+  position: relative;
 
   @include media-query($md-screen){
     display: flex;
