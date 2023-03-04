@@ -1,15 +1,17 @@
+@import '../abstract/media-queries';
 .card {
   --px: 2.75rem;
-  --border-radius: .4rem;
+  --border-radius: 0.4rem;
   color: var(--neutral-very-light-gray);
-  width: calc(100% - 2.5rem - 2*var(--px));
+  width: calc(100% - 2.5rem - 2 * var(--px));
   margin: 0 auto;
   padding: 5.5rem var(--px) 3rem var(--px);
   font-family: 'Lexend Deca', sans-serif;
-  background: var(--img) top var(--px) left var(--px) no-repeat, var(--bg-color,white);
+  background: var(--img) top var(--px) left var(--px) no-repeat,
+    var(--bg-color, white);
   background-size: 3.5rem;
   max-width: 250px;
-  
+
   &__title {
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
@@ -30,7 +32,7 @@
       color: var(--primary-bright-orange);
     }
   }
-  
+
   &--suvs {
     --img: url('../../images/icon-suvs.svg');
     --bg-color: var(--primary-dark-cyan);
@@ -38,7 +40,7 @@
       color: var(--primary-dark-cyan);
     }
   }
-  
+
   &--luxury {
     --img: url('../../images/icon-luxury.svg');
     --bg-color: var(--primary-very-dark-cyan);
@@ -54,8 +56,38 @@
   &__btn {
     display: inline-block;
     background-color: var(--neutral-very-light-gray);
-    padding: .75rem 2rem;
+    padding: 0.75rem 2rem;
     border-radius: 2rem;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
+  }
+
+  @include media-query($md-screen) {
+    margin: 0;
+    max-width: 200px;
+
+    &--sedans {
+      --bg-color: var(--primary-bright-orange);
+      --img: url('../../images/icon-sedans.svg');
+      border-top-left-radius: var(--border-radius);
+      border-bottom-left-radius: var(--border-radius);
+      border-top-right-radius: 0;
+    }
+
+    &--suvs {
+      --img: url('../../images/icon-suvs.svg');
+      --bg-color: var(--primary-dark-cyan);
+    }
+
+    &--luxury {
+      --img: url('../../images/icon-luxury.svg');
+      --bg-color: var(--primary-very-dark-cyan);
+      border-top-right-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+      border-bottom-left-radius: 0;
+    }
+
+    &__btn {
+      margin-top: 3rem;
+    }
   }
 }

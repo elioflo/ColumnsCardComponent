@@ -1,3 +1,11 @@
+@import '../abstract/media-queries';
+
 .container {
-  
+  min-height: 100vh;  
+
+  @include media-query($md-screen){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
