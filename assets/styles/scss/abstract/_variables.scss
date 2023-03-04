@@ -1,9 +1,20 @@
-:root {
-  --main-color: #393E46;
-  --main-bg-color: #FAFAFA;
-}
+// :root {
+//   --main-color: #393E46;
+//   --main-bg-color: #FAFAFA;
+// }
 
-:root.dark {
-  --main-color: #FAFAFA;
-  --main-bg-color: #393E46;
+// :root.dark {
+//   --main-color: #FAFAFA;
+//   --main-bg-color: #393E46;
+// }
+
+
+:root{
+  
+  --primary-bright-orange: hsl(31, 77%, 52%);
+  --primary-dark-cyan: hsl(184, 100%, 22%);
+  --primary-very-dark-cyan: hsl(179, 100%, 13%);
+  
+  --neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --neutral-very-light-gray: hsl(0, 0%, 95%);
 }
